@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Bootstrap Stylesheet imported-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!--Font Awsome CDN imported - Generic free font -->
+    <script src="https://kit.fontawesome.com/347a9e55b8.js" crossorigin="anonymous"></script>
+    <!--Custom Stylesheet reference-->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top">
+                <a class="navbar-brand" href="../src/index.html"><i class="fas fa-guitar" style="color:#EF5350"></i>
+                    Guitar Center</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <form class="form-inline">
+                        <input class="form-control form-control-sm ml-5 w-90"
+                            style="border-radius: 30px; background-color: #f7f7f7;;" type="text" placeholder="Search"
+                            aria-label="Search">
+                    </form>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav link">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../src/index.html">Home <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../src/index.html">Accostic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../src/index.html">Electric</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../src/contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <br><br>
+    <br>
+
+
+    <!-- Main Container -->
+
+    <main role="main" class="container-fluid">
+        <div class="jumbotron" style="padding: 2rem 2rem;">
+            <h1>Contact Us</h1>
+            <p class=" lead">Feel Open to share feedback related to our store. Stay Safe</p>
+            <p style="color:#ef5350"> Write to us below</p>
+
+        </div>
+
+    </main>
+
+    <div class="form">
+        <div class="container" style="padding-bottom: 80px">
+            <!--"-->
+            <form class="needs-validation" action="https://httpbin.org/post" method="POST" novalidate>
+                <div class=" form-group row">
+                    <div class="col">
+                        <label for="First Name">First Name</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="First name"
+                            required>
+                        <div class="invalid-feedback">
+                            Field Can't be left empty.
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <label for="Last Name">Last Name</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"
+                            required>
+                        <div class="invalid-feedback">
+                            Field Can't be left empty.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                    <div class="invalid-feedback">
+                        Field Can't be left empty.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Enter Address"
+                        required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <select id="inputCity" class="form-control">
+                            <option selected>Choose City</option>
+                            <option>Toronto, Ontario</option>
+                            <option>Vancouver, British Columbia</option>
+                            <option>Montreal, Quebec</option>
+                            <option>Niagara Falls, Ontario</option>
+                            <option>Victoria, British Columbia</option>
+                            <option>Halifax, Nova Scotia</option>
+                            <option>Quebec City, Quebec</option>
+                            <option>Calgary, Alberta</option>
+                            <option>Ottawa, Ontario</option>
+                            <option>Edmonton, Alberta</option>
+
+                        </select>
+                        <div class="invalid-feedback">
+                            Field Can't be left empty.
+                        </div>
+
+                    </div>
+
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Zip Code</label>
+                        <input type="text" class="form-control" id="inputZip" required>
+                        <div class="invalid-feedback">
+                            Field Can't be left empty.
+                        </div>
+                    </div>
+
+
+                    <div class="form-group  col-md-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Would you like to be phoned ?
+                            </label><br>
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <div class="form-group col-md-10">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Any message you want to specify" required></textarea>
+                        <div class="invalid-feedback">
+                            Field Can't be left empty.
+                        </div>
+                    </div>
+
+                    <div class=" form-group row col-md-12">
+                        <legend class="col-form-label col-sm-2 pt-0">Choose any one: </legend>
+                        <div class="col-sm-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Radio_button" id="gridRadios1"
+                                    value="orderproblem" data-toggle="collapse" href="#collapseExample"
+                                    id="invalidCheck" required>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Order Problem
+                                </label>
+
+                                <div class="collapse" id="collapseExample">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Enter Order ID">
+                                    </div>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="Radio_button" id="gridRadios2"
+                                        value="comment">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Comment
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="Radio_button" id="gridRadios2"
+                                        value="question">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Question
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input id="custId" name="Hidden_Input_Field" type="hidden" value="Guitar Center">
+                    <button type="submit" class="btn btn-secondary btn-lg">Submit</button>
+
+
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+
+
+
+
+
+    <footer>
+        <div class="container-fluid p-0">
+            <div class="row text-left">
+                <div class="col-md-5">
+                    <h1 class="text-light">About Us</h1>
+                    <p class="text-muted">Here you find the best of Genuine Accoustic and Electric Guitar
+                        recommended by
+                        Experts</p>
+                    <p class="pt-4 text-muted">Copyright © 2020 , All rights reserved. Hand-crafted & Made By
+                        <span>Guitar Center </span></p>
+                </div>
+
+                <div class="col-md-5">
+                    <h4 class="text-light">Newsletter</h4>
+                    <p class="text-muted">Stay Updated to our news</p>
+                    <form class=form-inline action="https://formspree.io/myydjbvv" method="POST">
+                        <div class="p1-0">
+                            <div class="input-group pr-5">
+                                <input type="email" name="_replyto" class="form-control bg-dark text-white"
+                                    placeholder="Email">
+                            </div>
+                            <div class="input-group pr-5">
+                                <textarea name="message" class="form-control bg-dark text-white"
+                                    placeholder="Enter your message here"></textarea>
+
+                            </div>
+                            <button type="submit" value="Send" class="btn btn-secondary btn-sm">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="text-light">Follow Us</h4>
+                    <p class="text-muted">Be Social</p>
+                    <div class="column">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-copyright text-center py-3">
+    </div>
+
+
+    <!--  Bootstrap Jquery Imported  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+
+
+</body>
+
+
+<script>$("#fresh").change(function () {
+        $('.hid').css("style", "display:none");
+    });
+
+    $("#exp").change(function () {
+        $('.hid').css("style", "display:block");
+    });
+</script>
+
+</html>

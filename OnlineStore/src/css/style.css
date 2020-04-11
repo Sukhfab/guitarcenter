@@ -1,0 +1,298 @@
+/* Import Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* Hide left and right extra space  */
+header,
+section {
+    overflow-x: hidden;
+}
+
+:root {
+    --Snigle-font: "Sniglet", cursive;
+    --Rubik: "Rubik", cursive;
+    --Patua: "Patua", cursive;
+    --Lobster: "Lobster", cursive;
+    --light-black: #2e2c2caf;
+    --light-grey: rgba(255, 255, 255, 0.877)
+}
+
+header a {
+    font-family: var(--Rubik);
+    font-size: 1.em;
+    font-weight: bold;
+    color: #343a40;
+    letter-spacing: 0.1em;
+}
+
+header {
+    background: #eeeeee;
+}
+
+header .navbar-expand-lg {
+    background: #f7f7f7;
+}
+
+header .nav-item:last-child {
+
+    text-align: center;
+}
+
+div#navbarNav {
+
+    text-align: center;
+}
+
+header .nav-item {
+    padding: 0.5em;
+}
+
+header .navbar-brand {
+    padding-left: 8rem;
+    font-weight: bold;
+    font-family: var(--Lobster);
+    font-size: 1.9em;
+    letter-spacing: 3px;
+
+}
+
+header .navbar-brand a {
+    color: whitesmoke;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #343a40;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #EF5350;
+}
+
+
+.navbar-light .navbar-brand:hover {
+    color: #EF5350
+}
+
+header .row .col-md-5 {
+    padding: 4.2vmin 1vmin;
+
+}
+
+header .row .col-md-7 {
+
+    padding: 25vmin 1vmin;
+    padding-bottom: 10vmin;
+    font-family: var(--Rubik);
+    color: #343a40 !important;
+}
+
+header .row .col-md-5 img {
+    padding-top: 4em;
+    width: 90%;
+    height: auto;
+}
+
+header .container .col-md-7 h6 {
+    padding: 1vmin;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #9E9E9E;
+}
+
+header .container .col-md-7 h1 {
+    font-size: 8vmin;
+    font-weight: bold;
+    padding: 0.1em 0em;
+}
+
+.h6,
+h6 {
+    padding: 1vmin;
+    color: #9E9E9E;
+    font-size: small;
+}
+
+header .container .col-md-7 p {
+    padding: 1vmin 5vmin;
+
+}
+
+header .container .col-md-7 button {
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: #EF5350;
+    color: white;
+}
+
+/* Main product listing */
+h3.h3 {
+    text-align: center;
+    margin: 1em;
+    text-transform: capitalize;
+    font-size: 1.7em;
+}
+
+.product-grid,
+.product-grid .product-image4 {
+    position: relative
+}
+
+.product-grid {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    overflow: hidden;
+    z-index: 1;
+    transition: all .3s ease 0s
+}
+
+.product-grid:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2)
+}
+
+.product-grid .product-image4 a {
+    display: block
+}
+
+.product-grid .product-image4 img {
+    width: auto;
+    height: 210px;
+}
+
+.product-grid .pic-1 {
+    opacity: 1;
+    transition: all .5s ease-out 0s
+}
+
+.product-grid:hover .pic-1 {
+    opacity: 100
+}
+
+
+
+.product-grid .product-content {
+    padding: 25px
+}
+
+.product-grid .title {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0 0 7px;
+    transition: all .3s ease 0s
+}
+
+.product-grid .title a {
+    color: #222
+}
+
+
+.product-grid .price {
+    color: #EF5350;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 2px 15px 0;
+    display: block
+}
+
+.product-grid .price span {
+    color: #909090;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-decoration: line-through;
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block
+}
+
+.product-grid .add-to-cart {
+    border: 1px solid #e5e5e5;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #888;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all .3s
+}
+
+.product-grid:hover .add-to-cart {
+    border: 1px solid transparent;
+    background: #EF5350;
+    color: #fff
+}
+
+.product-grid .add-to-cart:hover {
+    background-color: #EF5350;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5)
+}
+
+@media only screen and (max-width:990px) {
+    .product-grid {
+        margin-bottom: 30px
+    }
+}
+
+
+/* Siddebar CSS*/
+
+
+/* footer*/
+
+footer {
+    background: #323232;
+    overflow-x: hidden;
+    padding: 8vmin 20vmin;
+}
+
+.footer-copyright.text-center.py-3 {
+
+    background-color: #363636;
+}
+
+footer p>span {
+    color: #EF5350;
+}
+
+footer input {
+    border: none !important;
+}
+
+footer input::placeholder {
+    color: white !important;
+}
+
+footer .input-group .input-group-text {
+    background: yellow;
+}
+
+footer .column i {
+    color: white;
+}
+
+.input-group>.form-control,
+.input-group>.form-control-plaintext {
+    margin-bottom: 1rem;
+}
+
+.btn-secondary {
+    color: #ffffff;
+    background-color: #ef5350;
+    border: none !important;
+}
+
+.input-group>.form-control,
+.input-group>.form-control-plaintext {
+    margin-bottom: 1rem;
+    border: none;
+}
+
+footer .column i+i {
+    padding: 0 0.05em;
+}
